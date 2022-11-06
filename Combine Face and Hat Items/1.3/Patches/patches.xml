@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_VisageMask"]/apparel/bodyPartGroups</xpath>
+        <value>
+          <bodyPartGroups>
+            <li>Eyes</li>
+            <li>Teeth</li>
+          </bodyPartGroups>
+        </value>
+      </li> -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_VisageMask"]/apparel/layers</xpath>
+        <value>
+          <layers>
+            <li>EyeCover</li>
+          </layers>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_VisageMask"]/apparel</xpath>
+        <value>
+          <forceRenderUnderHair>
+              true
+          </forceRenderUnderHair>
+        </value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Apparel_VisageMask"]/apparel/hatRenderedFrontOfFace</xpath>
+      </li>
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li[5]/requirement/bodyPartGroupsMatchAny</xpath>
+        <value>
+          <bodyPartGroupsMatchAny>
+            <li>Eyes</li>
+            <li>Teeth</li>
+          </bodyPartGroupsMatchAny>
+        </value>
+      </li> -->
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/li[10]/requirement/bodyPartGroupsMatchAny</xpath>
+        <value>
+          <bodyPartGroupsMatchAny>
+            <li>Eyes</li>
+            <li>Teeth</li>
+          </bodyPartGroupsMatchAny>
+        </value>
+      </li> -->
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_WarVeil"]/apparel/bodyPartGroups</xpath>
+        <value>
+          <bodyPartGroups>
+            <li>Teeth</li>
+          </bodyPartGroups>
+        </value>
+      </li> -->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_WarVeil"]/apparel/layers</xpath>
+        <value>
+          <layers>
+            <li>EyeCover</li>
+          </layers>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_WarVeil"]/apparel</xpath>
+        <value>
+          <forceRenderUnderHair>
+              true
+          </forceRenderUnderHair>
+        </value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Apparel_WarVeil"]/apparel/hatRenderedFrontOfFace</xpath>
+      </li>
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/li[2]/requirement/bodyPartGroupsMatchAny</xpath>
+        <value>
+          <bodyPartGroupsMatchAny>
+            <li>Teeth</li>
+          </bodyPartGroupsMatchAny>
+        </value>
+      </li> -->
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <!-- <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFEM_Apparel_PlagueMask"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>Eyes</li>
+              <li>Teeth</li>
+            </bodyPartGroups>
+          </value>
+        </li> -->
+        <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="VFEM_Apparel_PlagueMask"]/apparel/layers</xpath>
+        <value>
+          <layers>
+            <li>EyeCover</li>
+          </layers>
+        </value>
+      </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEM_Apparel_PlagueMask"]/apparel/hatRenderedFrontOfFace</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VFEM_Apparel_PlagueMask"]/apparel</xpath>
+          <value>
+            <forceRenderUnderHair>true</forceRenderUnderHair>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel/bodyPartGroups</xpath>
+        <value>
+          <bodyPartGroups>
+            <li>UpperHead</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+          </bodyPartGroups>
+        </value>
+      </li> -->
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements/li[2]/requirement/bodyPartGroupsMatchAny</xpath>
+        <value>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+          </bodyPartGroupsMatchAny>
+        </value>
+      </li> -->
+      <!-- <li Class="PatchOperationReplace">
+        <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements/li[5]/requirement/bodyPartGroupsMatchAny</xpath>
+        <value>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+          </bodyPartGroupsMatchAny>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/PreceptDef[preceptClass="Precept_RoleMulti"]/roleApparelRequirements/li[2]/requirement/bodyPartGroupsMatchAny</xpath>
+        <value>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+          </bodyPartGroupsMatchAny>
+        </value>
+      </li> -->
+    </operations>
+  </Operation>
+</Patch>
